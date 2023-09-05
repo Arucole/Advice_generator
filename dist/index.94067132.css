@@ -1,0 +1,95 @@
+@import "https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700&family=Space+Grotesk:wght@300;400;500;600;700&display=swap";
+*, :before, :after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #1f2632;
+}
+
+body .container {
+  flex-flow: wrap;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  font-family: Manrope, sans-serif;
+  display: flex;
+}
+
+body .advice_card {
+  background-color: #323a49;
+  border: none;
+  border-radius: 15px;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  min-width: 10rem;
+  max-width: 20rem;
+  height: 21rem;
+  margin-top: 15rem;
+  padding: 1rem;
+  display: flex;
+  position: relative;
+}
+
+body .advice_card .heading {
+  color: #52ffa8;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-size: 12px;
+}
+
+body .advice_card .quote {
+  text-align: center;
+  color: #fff;
+  padding: .5rem 0;
+  font-size: 28px;
+  font-weight: 800;
+}
+
+body .advice_card .mobile {
+  margin-bottom: 25px;
+}
+
+body .advice_card .desktop {
+  display: none;
+}
+
+body .advice_card .btn {
+  justify-content: centent;
+  background-color: #52ffa8;
+  border: 1px solid #52ffa8;
+  border-radius: 30px;
+  flex-direction: column;
+  align-items: center;
+  width: 4rem;
+  height: 4rem;
+  display: flex;
+  position: absolute;
+  bottom: -30px;
+}
+
+body .advice_card .btn:hover {
+  cursor: pointer;
+  transition: all .2s ease-in;
+  box-shadow: 0 0 40px #52ffa9;
+}
+
+body .advice_card .btn img {
+  margin-top: 1.2rem;
+}
+
+@media only screen and (width >= 768px) {
+  body .advice_card {
+    max-width: 40rem;
+    height: 25rem;
+  }
+
+  body .quote {
+    margin: 0 3rem;
+  }
+}
+
+/*# sourceMappingURL=index.94067132.css.map */
